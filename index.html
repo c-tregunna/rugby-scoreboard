@@ -1,0 +1,31 @@
+<!doctype html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Rugby Scrorecard</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="home-container">
+                <h3>HOME</h3>
+                <div id="score-box-home">0</div>
+                <div class="btn-container">
+                    <button id="h-two-points" class="score-btn" onclick="addHome2Points()">+2</button>
+                    <button id="h-three-points" class="score-btn" onclick="addHome3Points()">+3</button>
+                    <button id="h-five-points" class="score-btn" onclick="addHome5Points()">+5</button>
+                </div>
+            </div>
+            <div class="away-container">
+                <h3>AWAY</h3>
+                <div id="score-box-away">0</div>
+                <div class="btn-container">
+                    <button id="a-two-points" class="score-btn" onclick="addAway2Points()">+2</button>
+                    <button id="a-three-points" class="score-btn" onclick="addAway3Points()">+3</button>
+                    <button id="a-five-points" class="score-btn" onclick="addAway5Points()">+5</button>
+                </div>
+            </div>
+        </div>
+        <button id="new-game" onclick="resetGame()">New Game</button>
+        <script src="index.js"></script>
+    </body>
+</html>
